@@ -1,1 +1,1 @@
-Proyecto creado en la particición de la competencia de 5 días TacticoSoft
+Participación en la competencia de 5 días para la creación de software de empresa
