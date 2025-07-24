@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92C1D700-33CF-4184-A934-F16634D10368}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Vistas.My.MyApplication</StartupObject>
+    <RootNamespace>Vistas</RootNamespace>
+    <AssemblyName>Vistas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Vistas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Vistas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Vistas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Vistas.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clientesForm.Designer.vb">
+      <DependentUpon>clientesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientes\BM-Clientes.Designer.vb">
+      <DependentUpon>BM-Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientes\BM-Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientes\crearCliente.Designer.vb">
+      <DependentUpon>crearCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientes\crearCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientes\listarClientes.Designer.vb">
+      <DependentUpon>listarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientes\listarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomDataGridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmReporteVentas.Designer.vb">
+      <DependentUpon>frmReporteVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productos\BM-Productos.Designer.vb">
+      <DependentUpon>BM-Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="productos\BM-Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productos\listarProductos.Designer.vb">
+      <DependentUpon>listarProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="productos\listarProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\reporteVentas1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reporteVentas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ventasForm.Designer.vb">
+      <DependentUpon>ventasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ventasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMenu.Designer.vb">
+      <DependentUpon>formMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="productosForm.Designer.vb">
+      <DependentUpon>productosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="productosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productos\crearProducto.Designer.vb">
+      <DependentUpon>crearProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="productos\crearProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventas\BM-Ventas.Designer.vb">
+      <DependentUpon>BM-Ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ventas\BM-Ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventas\crearVenta.Designer.vb">
+      <DependentUpon>crearVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ventas\crearVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventas\listarVentas.Designer.vb">
+      <DependentUpon>listarVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ventas\listarVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="clientesForm.resx">
+      <DependentUpon>clientesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes\BM-Clientes.resx">
+      <DependentUpon>BM-Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes\crearCliente.resx">
+      <DependentUpon>crearCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes\listarClientes.resx">
+      <DependentUpon>listarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMenu.resx">
+      <DependentUpon>formMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteVentas.resx">
+      <DependentUpon>frmReporteVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productosForm.resx">
+      <DependentUpon>productosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productos\BM-Productos.resx">
+      <DependentUpon>BM-Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productos\crearProducto.resx">
+      <DependentUpon>crearProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productos\listarProductos.resx">
+      <DependentUpon>listarProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\reporteVentas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reporteVentas1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventasForm.resx">
+      <DependentUpon>ventasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas\BM-Ventas.resx">
+      <DependentUpon>BM-Ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas\crearVenta.resx">
+      <DependentUpon>crearVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventas\listarVentas.resx">
+      <DependentUpon>listarVentas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidad\Entidad.vbproj">
+      <Project>{2334a88a-8b9d-4b6c-964f-3a46c101750f}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.vbproj">
+      <Project>{3b8871d1-d89e-49a1-8c33-902e550f7ca3}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
